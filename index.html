@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="color-scheme" content="dark"/>
+<link rel="icon" href="data:,">
+<title>Rick's Tree &amp; Stump Removal — Tree Removal in Harrisburg, PA</title>
+<meta name="description" content="Rick's Tree & Stump Removal — tree removal and stump removal in Harrisburg, PA 17112. One man, one call. Free quotes. Call Rick at (717) 657-0455."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Rick's Tree & Stump Removal","telephone":"+17176570455","address":{"@type":"PostalAddress","addressLocality":"Harrisburg","addressRegion":"PA","postalCode":"17112"},"areaServed":"Harrisburg, PA"}
+</script>
+<style>
+:root{
+  --bg:#0e120c; --bg2:#161c14; --panel:#1c2418; --panel2:#232d1f;
+  --ink:#f4f1e8; --muted:#c3c8b8; --faint:#8f9683;
+  --accent:#f2a413; --accent2:#8fce62; --line:rgba(255,255,255,.12);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,[role="button"],select,input,textarea{font:inherit}
+button,a.btn{min-height:44px}
+h1,h2,h3{line-height:1.02;margin:0;font-family:"Barlow Condensed",system-ui,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+#progress{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0;z-index:90}
+
+/* ---------- Film intro ---------- */
+#intro{position:fixed;inset:0;z-index:200;background:#000;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .8s ease,visibility .8s}
+#intro.out{opacity:0;visibility:hidden;pointer-events:none}
+#intro .bar{position:absolute;left:0;right:0;height:12vh;background:#000;z-index:2;transition:transform 1s ease}
+#intro .bar.top{top:0}#intro .bar.bottom{bottom:0}
+#intro.out .bar.top{transform:translateY(-100%)}
+#intro.out .bar.bottom{transform:translateY(100%)}
+#intro .frame{position:absolute;inset:12vh 0;border-top:1px solid rgba(255,255,255,.15);border-bottom:1px solid rgba(255,255,255,.15)}
+#intro .intro-inner{text-align:center;padding:0 20px;animation:introIn 1.4s ease both}
+@keyframes introIn{from{opacity:0;transform:scale(1.06);letter-spacing:.35em}to{opacity:1;transform:scale(1)}}
+#intro .intro-kick{color:var(--accent);font-weight:700;letter-spacing:.4em;text-transform:uppercase;font-size:12px}
+#intro h1{font-size:clamp(44px,10vw,110px);margin:14px 0 6px}
+#intro h1 span{color:var(--accent)}
+#intro p{color:#cfcabb;margin:0;font-size:clamp(15px,2.5vw,20px);letter-spacing:.14em;text-transform:uppercase}
+#intro .skip{position:absolute;bottom:16vh;left:0;right:0;text-align:center;color:#8a8a8a;font-size:12px;letter-spacing:.3em;text-transform:uppercase;animation:blink 1.2s ease-in-out infinite}
+@keyframes blink{50%{opacity:.3}}
+
+/* ---------- Nav ---------- */
+header{position:sticky;top:0;z-index:80;background:rgba(14,18,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;max-width:1180px;margin:0 auto}
+.logo{font-family:"Barlow Condensed",sans-serif;font-size:24px;font-weight:800;letter-spacing:-.01em;text-decoration:none;line-height:1}
+.logo span{color:var(--accent)}
+.logo small{display:block;font-family:"Barlow",sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.navlinks{display:none;gap:22px}
+.navlinks a{text-decoration:none;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.navlinks a:hover{color:#fff}
+.callbtn{background:var(--accent);color:#1a1200;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:999px;white-space:nowrap}
+@media(min-width:860px){.navlinks{display:flex}}
+
+/* ---------- Hero: slideshow + scroll camera ---------- */
+.hero{position:relative;min-height:94svh;display:flex;align-items:flex-end;overflow:hidden;background:#000}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease;will-change:transform}
+.slide.active{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;animation:kenburns 7s ease forwards}
+@keyframes kenburns{from{transform:scale(1.02)}to{transform:scale(1.13)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.1) 35%,rgba(14,18,12,.96) 94%);pointer-events:none}
+#leaves{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hero-inner{position:relative;z-index:2;padding:110px 0 46px;width:100%;will-change:transform,opacity}
+@media(max-width:859px){.hero-inner{padding-bottom:100px}}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);padding:8px 14px;border-radius:999px;font-weight:700;font-size:14px}
+.badge i{color:var(--accent);font-style:normal}
+.hero h1{font-size:clamp(46px,9.5vw,100px);margin:18px 0 14px;max-width:920px;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{font-size:clamp(17px,2.4vw,22px);color:#ece9dd;max-width:640px;margin:0 0 24px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:800;padding:15px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--accent);color:#1a1200}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35)}
+.btn-dark{background:#20261c;color:#fff}
+.dots{display:flex;gap:8px;margin-top:26px}
+.dots button{width:44px;height:44px;border-radius:50%;background:transparent;border:0;display:grid;place-items:center;cursor:pointer}
+.dots button::after{content:"";width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.4);transition:all .3s}
+.dots button.active::after{background:var(--accent);width:26px;border-radius:99px}
+
+/* ---------- Crossing marquees ---------- */
+.marquee{overflow:hidden;background:#0a0d09;border-block:1px solid var(--line);padding:14px 0;white-space:nowrap}
+.marquee.rev{background:var(--accent);border-block-color:transparent}
+.marquee-track{display:inline-flex;gap:36px;animation:scroll 28s linear infinite;font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;font-size:20px;color:#d8d5c8}
+.marquee.rev .marquee-track{animation-direction:reverse;animation-duration:32s;color:#1a1200}
+.marquee-track span i{color:var(--accent);font-style:normal}
+.marquee.rev .marquee-track span i{color:#1a1200}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ---------- Sections ---------- */
+section{padding:76px 0}
+.kicker{color:var(--accent);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+h2{font-size:clamp(32px,5.5vw,56px);margin-bottom:14px}
+.sub{color:var(--muted);max-width:680px;font-size:17px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Sticky stacking service cards ---------- */
+.stack{position:relative;margin-top:40px}
+.stack-card{position:sticky;top:86px;background:var(--panel);border:1px solid var(--line);border-radius:24px;overflow:hidden;margin-bottom:22px;box-shadow:0 30px 60px rgba(0,0,0,.5);display:grid;transition:transform .3s ease}
+@media(min-width:820px){.stack-card{grid-template-columns:1.1fr 1fr;min-height:340px}}
+.stack-card img{width:100%;height:240px;object-fit:cover}
+@media(min-width:820px){.stack-card img{height:100%}}
+.stack-card .card-body{padding:30px 28px;display:flex;flex-direction:column;justify-content:center}
+.stack-card .num{font-family:"Barlow Condensed",sans-serif;font-size:64px;font-weight:800;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--accent);margin-bottom:12px}
+.stack-card h3{font-size:clamp(28px,4vw,40px);margin-bottom:10px}
+.stack-card p{color:var(--muted);margin:0 0 18px;font-size:16px}
+.stack-card .tag{display:inline-block;background:rgba(242,164,19,.14);border:1px solid rgba(242,164,19,.4);color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:14px;align-self:flex-start}
+.stack-card.cta{background:linear-gradient(135deg,#2a3a20,#1c2418)}
+.stack-card.cta .btn{align-self:flex-start}
+
+/* ---------- How it works ---------- */
+.steps{display:grid;gap:18px;margin-top:36px}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;position:relative;overflow:hidden}
+.step-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.step-card b.num{font-family:"Barlow Condensed",sans-serif;font-size:52px;font-weight:800;color:var(--accent);line-height:1}
+.step-card h3{font-size:24px;margin:12px 0 8px}
+.step-card p{color:var(--muted);margin:0}
+
+/* ---------- Filmstrip ---------- */
+.filmstrip{overflow:hidden;background:#000;padding:26px 0;border-block:1px solid var(--line);position:relative}
+.filmstrip::before,.filmstrip::after{content:"";position:absolute;left:0;right:0;height:12px;background-image:repeating-linear-gradient(90deg,#f4f1e8 0 18px,transparent 18px 34px);opacity:.5}
+.filmstrip::before{top:6px}.filmstrip::after{bottom:6px}
+.film-track{display:inline-flex;gap:14px;animation:scroll 40s linear infinite;width:max-content;padding:0 7px}
+.film-track img{height:170px;width:260px;object-fit:cover;border-radius:8px;flex:none}
+@media(min-width:820px){.film-track img{height:200px;width:300px}}
+
+/* ---------- Story split ---------- */
+.split{display:grid;gap:32px;align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr}}
+.split img.main{border-radius:24px;width:100%;height:100%;min-height:320px;object-fit:cover;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.checklist{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:16px}
+.checklist li{font-weight:700;padding-left:34px;position:relative}
+.checklist li::before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#1a1200;display:grid;place-items:center;font-size:14px;font-weight:800}
+.checklist li span{display:block;font-weight:400;color:var(--muted);font-size:15px}
+
+/* ---------- Gallery ---------- */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:34px}
+@media(min-width:820px){.gallery{grid-template-columns:repeat(3,1fr);gap:16px}}
+.gallery button{border:0;padding:0;background:none;cursor:pointer;border-radius:14px;overflow:hidden;position:relative}
+.gallery img{width:100%;height:190px;object-fit:cover;transition:transform .5s ease}
+@media(min-width:820px){.gallery img{height:240px}}
+.gallery button:hover img{transform:scale(1.06)}
+
+/* ---------- Quote wizard ---------- */
+.quote{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.wizard{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:28px 24px;margin-top:30px;max-width:760px}
+@media(min-width:700px){.wizard{padding:36px}}
+.progressbar{height:8px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden;margin-bottom:26px}
+.progressbar i{display:block;height:100%;width:33%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px;transition:width .4s ease}
+.wizard .step{display:none}
+.wizard .step.active{display:block;animation:stepIn .35s ease}
+@keyframes stepIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.wizard h3{font-size:26px;margin-bottom:18px;text-transform:none;font-family:"Barlow",sans-serif;font-weight:700;letter-spacing:0}
+.options{display:grid;gap:10px}
+@media(min-width:600px){.options{grid-template-columns:repeat(2,1fr)}}
+.options label{cursor:pointer}
+.options input{position:absolute;opacity:0;pointer-events:none}
+.opt{display:flex;align-items:center;gap:10px;background:var(--panel2);border:2px solid var(--line);border-radius:14px;padding:16px;font-weight:700;transition:border-color .2s,background .2s}
+.options input:checked + .opt{border-color:var(--accent);background:rgba(242,164,19,.12)}
+.options input:focus-visible + .opt{outline:2px solid var(--accent);outline-offset:2px}
+.field{margin-top:16px}
+.field span{display:block;font-weight:700;margin-bottom:8px;font-size:15px}
+.field input,.field textarea{width:100%;background:#12160f;border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink);outline:none}
+.field input:focus,.field textarea:focus{border-color:var(--accent)}
+.wiz-nav{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.summary{background:#12160f;border:1px solid rgba(242,164,19,.45);border-radius:14px;padding:18px;white-space:pre-wrap;font-size:15px;color:var(--ink);margin:0 0 18px}
+
+/* ---------- Call band / footer / sticky ---------- */
+.callband{background:var(--accent);color:#1a1200;text-align:center;padding:64px 20px}
+.callband h2{font-size:clamp(34px,6vw,60px)}
+.callband p{max-width:560px;margin:12px auto 24px;font-size:17px;font-weight:500}
+.callband .btn{background:#1a1200;color:#fff;font-size:18px}
+footer{padding:40px 0 110px;color:var(--muted);font-size:14px;line-height:1.8;text-align:center}
+footer a{color:var(--accent2)}
+.sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;gap:10px;justify-content:center;padding:12px 14px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(180deg,transparent,rgba(10,13,9,.95) 30%);transform:translateY(120%);transition:transform .4s ease}
+.sticky-call.show{transform:none}
+.sticky-call .btn{flex:1;max-width:320px}
+#lightbox{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;padding:20px}
+#lightbox.open{display:flex}
+#lightbox img{max-width:96vw;max-height:88vh;border-radius:12px;object-fit:contain}
+#lbClose{position:absolute;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.5);color:#fff;font-size:28px;cursor:pointer}
+
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .slide img,.marquee-track,.film-track{animation:none}
+  #intro{display:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- FILM INTRO -->
+<div id="intro" role="button" tabindex="0" aria-label="Skip intro">
+  <div class="bar top"></div><div class="bar bottom"></div><div class="frame"></div>
+  <div class="intro-inner">
+    <div class="intro-kick">Harrisburg &bull; Pennsylvania</div>
+    <h1>Rick&rsquo;s <span>Tree &amp; Stump</span></h1>
+    <p>Tree Removal &nbsp;&middot;&nbsp; Stump Removal</p>
+  </div>
+  <div class="skip">Tap to skip</div>
+</div>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top">RICK&rsquo;S <span>TREE &amp; STUMP</span><small>Harrisburg &bull; PA 17112</small></a>
+    <nav class="navlinks">
+      <a href="#services">Services</a><a href="#how">How It Works</a><a href="#work">The Work</a><a href="#quote">Free Quote</a>
+    </nav>
+    <a class="callbtn" href="tel:+17176570455">&#9742; (717) 657-0455</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO SLIDESHOW + SCROLL CAMERA -->
+<div class="hero" id="hero">
+  <div class="slide active"><img src="https://images.pexels.com/photos/31127615/pexels-photo-31127615.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Tree worker cutting the top off a tall trunk with a chainsaw, sawdust flying"/></div>
+  <div class="slide"><img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=1600&q=80" alt="Sunlight shining through tall trees in a forest"/></div>
+  <div class="slide"><img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1600&q=80" alt="A big tree standing alone in a green field"/></div>
+  <canvas id="leaves" aria-hidden="true"></canvas>
+  <div class="hero-inner wrap" id="heroInner">
+    <span class="badge"><i>&#9679;</i> Tree &amp; stump removal &mdash; Harrisburg, PA</span>
+    <h1>That tree&rsquo;s gotta go.<br/><em>Rick takes it down.</em></h1>
+    <p class="lead">Tree removal and stump removal in Harrisburg, PA. One man, one call &mdash; you talk to Rick himself. Free quotes, no pushy sales talk.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+17176570455">Call Rick &mdash; (717) 657-0455</a>
+      <a class="btn btn-ghost" href="#quote">Get a Free Quote</a>
+    </div>
+    <div class="dots" id="dots" aria-label="Hero photos"></div>
+  </div>
+</div>
+
+<!-- CROSSING MARQUEES -->
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee1"></div></div>
+<div class="marquee rev" aria-hidden="true"><div class="marquee-track" id="marquee2"></div></div>
+
+<!-- SERVICES: STICKY STACKING CARDS -->
+<section id="services"><div class="wrap">
+  <p class="kicker">What Rick does</p>
+  <h2>Two jobs. Done right.</h2>
+  <p class="sub">Rick keeps it simple: trees and stumps. That&rsquo;s the whole list &mdash; and he does both himself.</p>
+  <div class="stack">
+    <article class="stack-card tilt" style="top:84px">
+      <img src="https://images.pexels.com/photos/2310483/pexels-photo-2310483.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Tree worker sitting on a branch with a chainsaw and ropes, cutting a tree down in sections"/>
+      <div class="card-body">
+        <span class="tag">Service 01</span>
+        <div class="num">01</div>
+        <h3>Tree Removal</h3>
+        <p>Dead tree? Leaning tree? Tree too close to the house? Rick cuts it down and takes it away, piece by piece, so your yard is clear again.</p>
+        <a class="btn btn-primary" href="tel:+17176570455">Call About a Tree</a>
+      </div>
+    </article>
+    <article class="stack-card tilt" style="top:104px">
+      <img src="https://images.pexels.com/photos/7812853/pexels-photo-7812853.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cutting a tree stump down low with a chainsaw"/>
+      <div class="card-body">
+        <span class="tag">Service 02</span>
+        <div class="num">02</div>
+        <h3>Stump Removal</h3>
+        <p>That stump in the middle of the yard &mdash; the one you mow around and trip over. Rick gets it out so the grass can grow back flat.</p>
+        <a class="btn btn-primary" href="tel:+17176570455">Call About a Stump</a>
+      </div>
+    </article>
+    <article class="stack-card cta tilt" style="top:124px">
+      <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80" alt="Looking straight up at tall tree trunks and green leaves against the sky"/>
+      <div class="card-body">
+        <span class="tag">Free quote</span>
+        <div class="num">03</div>
+        <h3>Not sure what it costs?</h3>
+        <p>Call Rick and tell him about the tree. He&rsquo;ll give you a free quote &mdash; no charge for asking, no pressure if you say no.</p>
+        <a class="btn btn-primary" href="#quote">Get My Free Quote</a>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="padding-top:0"><div class="wrap reveal">
+  <p class="kicker">Easy as 1-2-3</p>
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step-card"><b class="num">1</b><h3>Call Rick</h3><p>One call, one man. Tell him about the tree or stump &mdash; where it is, how big it looks. That&rsquo;s it.</p></div>
+    <div class="step-card"><b class="num">2</b><h3>Free quote</h3><p>Rick tells you what the job costs before any work starts. Free to ask. No surprise charges later.</p></div>
+    <div class="step-card"><b class="num">3</b><h3>Tree gone</h3><p>Rick does the job himself and clears the tree or stump away, so your yard is yours again.</p></div>
+  </div>
+</div></section>
+
+<!-- ENDLESS FILMSTRIP -->
+<div class="filmstrip" aria-hidden="true"><div class="film-track" id="film"></div></div>
+
+<!-- STORY -->
+<section><div class="wrap split reveal">
+  <div>
+    <p class="kicker">One-man outfit</p>
+    <h2>One man. You talk to Rick.</h2>
+    <p class="sub">Rick&rsquo;s Tree &amp; Stump Removal is a one-man outfit in Harrisburg, PA. When you call, you get Rick Ingram &mdash; the same man who shows up and does the work. No call center, no crew of strangers, no runaround.</p>
+    <ul class="checklist">
+      <li>You talk to the man doing the job <span>Rick answers, Rick quotes, Rick cuts. Simple.</span></li>
+      <li>Free quotes <span>Ask what the job costs before you agree to anything.</span></li>
+      <li>Trees and stumps <span>That&rsquo;s all he does &mdash; and he does it every day.</span></li>
+      <li>Right here in Harrisburg <span>Based in Harrisburg, PA 17112.</span></li>
+    </ul>
+  </div>
+  <img class="main" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="A quiet path through tall green trees"/>
+</div></section>
+
+<!-- GALLERY -->
+<section id="work" style="padding-top:0"><div class="wrap reveal">
+  <p class="kicker">The work</p>
+  <h2>What the work looks like</h2>
+  <p class="sub">Cutting, sawdust, and a clear yard at the end of it. Tap any photo to see it full size.</p>
+  <div class="gallery" id="gallery">
+    <button data-full="https://images.pexels.com/photos/6153123/pexels-photo-6153123.jpeg?auto=compress&cs=tinysrgb&w=1600"><img loading="lazy" src="https://images.pexels.com/photos/6153123/pexels-photo-6153123.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chainsaw cutting into a thick tree trunk, sawdust flying"/></button>
+    <button data-full="https://images.pexels.com/photos/11930042/pexels-photo-11930042.jpeg?auto=compress&cs=tinysrgb&w=1600"><img loading="lazy" src="https://images.pexels.com/photos/11930042/pexels-photo-11930042.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Worker in a red helmet cutting a tree down in the woods"/></button>
+    <button data-full="https://images.pexels.com/photos/4206113/pexels-photo-4206113.jpeg?auto=compress&cs=tinysrgb&w=1600"><img loading="lazy" src="https://images.pexels.com/photos/4206113/pexels-photo-4206113.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Close-up of a chainsaw bar resting on a freshly cut log"/></button>
+    <button data-full="https://images.pexels.com/photos/594604/pexels-photo-594604.jpeg?auto=compress&cs=tinysrgb&w=1600"><img loading="lazy" src="https://images.pexels.com/photos/594604/pexels-photo-594604.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chainsaw cutting through a tree trunk next to a fresh cut"/></button>
+    <button data-full="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1600&q=80"><img loading="lazy" src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80" alt="Tall trees reaching up into a bright sky"/></button>
+    <button data-full="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1600&q=80"><img loading="lazy" src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=800&q=80" alt="A misty green forest valley full of trees"/></button>
+  </div>
+</div></section>
+
+<!-- QUOTE WIZARD -->
+<section class="quote" id="quote"><div class="wrap reveal">
+  <p class="kicker">Free quote</p>
+  <h2>Get your free quote</h2>
+  <p class="sub">Three quick steps. At the end you get a short message to read to Rick when you call &mdash; or just call him now at <a href="tel:+17176570455">(717) 657-0455</a>.</p>
+  <form class="wizard" id="wizard">
+    <div class="progressbar"><i id="pbar"></i></div>
+    <div class="step active" data-step="1">
+      <h3>Step 1 &mdash; What needs to go?</h3>
+      <div class="options">
+        <label><input type="radio" name="service" value="Tree removal" checked/><span class="opt">🌳 Tree removal</span></label>
+        <label><input type="radio" name="service" value="Stump removal"/><span class="opt">🪵 Stump removal</span></label>
+        <label><input type="radio" name="service" value="Tree + stump removal"/><span class="opt">🌳+🪵 Tree and stump</span></label>
+        <label><input type="radio" name="service" value="Not sure yet"/><span class="opt">❓ Not sure yet</span></label>
+      </div>
+    </div>
+    <div class="step" data-step="2">
+      <h3>Step 2 &mdash; Tell Rick about it</h3>
+      <div class="field" style="margin-top:0"><span>What&rsquo;s the tree or stump like? (big, small, leaning, near the house&hellip;)</span>
+      <textarea id="qdetails" rows="3" placeholder="e.g. Big dead oak in the back yard, close to the fence"></textarea></div>
+      <div class="field"><span>Where is it? (street or area &mdash; optional)</span>
+      <input id="qarea" type="text" placeholder="e.g. Near 17112, Harrisburg"/></div>
+    </div>
+    <div class="step" data-step="3">
+      <h3>Step 3 &mdash; Your message for Rick</h3>
+      <div class="field" style="margin-top:0"><span>Your name</span><input id="qname" type="text" autocomplete="name" placeholder="Your name"/></div>
+      <div class="field"><span>Your phone</span><input id="qphone" type="tel" autocomplete="tel" placeholder="(717) 000-0000"/></div>
+      <p style="color:var(--muted);font-size:14px;margin:16px 0 0">Tap &ldquo;Build my message&rdquo; and you&rsquo;ll get a short note to read out when you call Rick. Nothing is sent from this page &mdash; you just call.</p>
+    </div>
+    <div class="step" data-step="4">
+      <h3>Here&rsquo;s your message</h3>
+      <p class="summary" id="summaryText"></p>
+      <div class="cta-row">
+        <button type="button" class="btn btn-dark" id="copyBtn">Copy the Message</button>
+        <a class="btn btn-primary" href="tel:+17176570455">Call Rick Now</a>
+      </div>
+      <p id="copyNote" style="color:var(--accent2);font-weight:700;margin:14px 0 0;display:none">Copied! Read it to Rick when he picks up.</p>
+    </div>
+    <div class="wiz-nav">
+      <button type="button" class="btn btn-dark" id="backBtn" style="display:none">&larr; Back</button>
+      <button type="button" class="btn btn-primary" id="nextBtn">Next &rarr;</button>
+      <button type="button" class="btn btn-primary" id="buildBtn" style="display:none">Build My Message &rarr;</button>
+    </div>
+  </form>
+</div></section>
+
+<!-- CALL BAND -->
+<div class="callband">
+  <h2>Got a tree that&rsquo;s gotta go?</h2>
+  <p>Call Rick today. One call, one man, free quote.</p>
+  <a class="btn" href="tel:+17176570455">&#9742; Call (717) 657-0455</a>
+</div>
+</main>
+
+<footer><div class="wrap">
+  Rick&rsquo;s Tree &amp; Stump Removal &middot; Owner: Rick Ingram &middot; Harrisburg, PA 17112<br/>
+  <a href="tel:+17176570455">(717) 657-0455</a> &middot; Tree removal &amp; stump removal &middot; Free quotes<br/>
+  Photos: Pexels &amp; Unsplash stock photos
+</div></footer>
+
+<div class="sticky-call" id="stickyCall">
+  <a class="btn btn-primary" href="tel:+17176570455">&#9742; Call Rick</a>
+  <a class="btn btn-ghost" style="background:#20261c" href="#quote">Free Quote</a>
+</div>
+
+<div id="lightbox" role="dialog" aria-label="Photo viewer"><button id="lbClose" aria-label="Close">&times;</button><img id="lbImg" src="" alt="Tree work photo, enlarged"/></div>
+
+<script>
+// Film intro: auto-dismiss, or tap/click/key to skip
+(function(){
+  var intro=document.getElementById('intro');
+  if(!intro) return;
+  var done=false;
+  function dismiss(){ if(done) return; done=true; intro.classList.add('out'); setTimeout(function(){ intro.remove(); },1100); }
+  setTimeout(dismiss,2400);
+  intro.addEventListener('click',dismiss);
+  intro.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '||e.key==='Escape'){ e.preventDefault(); dismiss(); } });
+})();
+
+// Progress bar + sticky call bar
+var prog=document.getElementById('progress');
+var stickyCall=document.getElementById('stickyCall');
+addEventListener('scroll',function(){
+  var h=document.documentElement;
+  var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+  prog.style.width=p+'%';
+  stickyCall.classList.toggle('show',h.scrollTop>560);
+},{passive:true});
+
+// Hero slideshow
+var slides=document.querySelectorAll('.slide'),dotsWrap=document.getElementById('dots'),cur=0,timer;
+slides.forEach(function(_,i){
+  var b=document.createElement('button');
+  b.setAttribute('aria-label','Show photo '+(i+1));
+  if(i===0)b.className='active';
+  b.addEventListener('click',function(){go(i);restart();});
+  dotsWrap.appendChild(b);
+});
+function go(i){
+  slides[cur].classList.remove('active');dotsWrap.children[cur].classList.remove('active');
+  cur=i;slides[cur].classList.add('active');dotsWrap.children[cur].classList.add('active');
+}
+function restart(){clearInterval(timer);timer=setInterval(function(){go((cur+1)%slides.length);},4500);}
+restart();
+
+// Scroll-driven camera: hero zooms out + headline drifts up as you scroll
+var hero=document.getElementById('hero'),heroInner=document.getElementById('heroInner'),ticking=false;
+function camera(){
+  ticking=false;
+  var y=scrollY,hh=hero.offsetHeight;
+  if(y>hh*1.2) return;
+  var p=Math.min(y/hh,1);
+  slides.forEach(function(s){ s.style.transform='scale('+(1+p*0.18)+') translateY('+(p*40)+'px)'; });
+  heroInner.style.transform='translateY('+(-p*90)+'px)';
+  heroInner.style.opacity=String(1-p*1.4);
+}
+addEventListener('scroll',function(){ if(!ticking){ requestAnimationFrame(camera); ticking=true; } },{passive:true});
+
+// Leaves + sawdust particles over the hero (2D canvas)
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var cv=document.getElementById('leaves'),ctx=cv.getContext('2d'),W,H,parts=[],running=true;
+  function size(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; }
+  size(); addEventListener('resize',size);
+  var leafCols=['#8fce62','#c9d66a','#f2a413','#7fb069'];
+  for(var i=0;i<26;i++){
+    parts.push({x:Math.random(),y:Math.random(),s:5+Math.random()*9,r:Math.random()*Math.PI*2,vr:(Math.random()-.5)*.03,vy:.0006+Math.random()*.0014,vx:(Math.random()-.5)*.0006,c:leafCols[i%leafCols.length],leaf:true});
+  }
+  for(var j=0;j<40;j++){
+    parts.push({x:Math.random(),y:Math.random(),s:1+Math.random()*2.2,r:0,vr:0,vy:.0002+Math.random()*.0005,vx:(Math.random()-.5)*.0004,c:'255,214,120',leaf:false});
+  }
+  new IntersectionObserver(function(es){ running=es[0].isIntersecting; if(running) requestAnimationFrame(draw); },{threshold:0}).observe(hero);
+  function draw(){
+    if(!running) return;
+    ctx.clearRect(0,0,W,H);
+    var t=Date.now()/1000;
+    parts.forEach(function(p){
+      p.y+=p.vy; p.x+=p.vx+Math.sin(t+p.s*3)*.00012; p.r+=p.vr;
+      if(p.y>1.02){ p.y=-.02; p.x=Math.random(); }
+      if(p.x>1.02)p.x=-.02; if(p.x<-.02)p.x=1.02;
+      var px=p.x*W,py=p.y*H;
+      if(p.leaf){
+        ctx.save(); ctx.translate(px,py); ctx.rotate(p.r);
+        ctx.fillStyle=p.c; ctx.globalAlpha=.85;
+        ctx.beginPath(); ctx.ellipse(0,0,p.s,p.s*.45,0,0,Math.PI*2); ctx.fill();
+        ctx.restore();
+      }else{
+        ctx.fillStyle='rgba('+p.c+','+(0.25+0.35*Math.abs(Math.sin(t+p.x*10)))+')';
+        ctx.beginPath(); ctx.arc(px,py,p.s,0,Math.PI*2); ctx.fill();
+      }
+    });
+    ctx.globalAlpha=1;
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+})();
+
+// Crossing marquees + endless filmstrip
+var items=['Tree Removal','Stump Removal','Free Quotes','One Man, One Call','Harrisburg, PA'];
+function fillMarquee(id){
+  var mh='';
+  for(var r=0;r<3;r++){ items.forEach(function(t){ mh+='<span>'+t+' <i>\u25c6</i></span>'; }); }
+  document.getElementById(id).innerHTML=mh;
+}
+fillMarquee('marquee1'); fillMarquee('marquee2');
+var pics=[
+  'https://images.pexels.com/photos/31127615/pexels-photo-31127615.jpeg?auto=compress&cs=tinysrgb&w=800',
+  'https://images.pexels.com/photos/6153123/pexels-photo-6153123.jpeg?auto=compress&cs=tinysrgb&w=800',
+  'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=800&q=80',
+  'https://images.pexels.com/photos/11930042/pexels-photo-11930042.jpeg?auto=compress&cs=tinysrgb&w=800',
+  'https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80',
+  'https://images.pexels.com/photos/594604/pexels-photo-594604.jpeg?auto=compress&cs=tinysrgb&w=800'
+];
+var fh='';
+for(var r2=0;r2<2;r2++){ pics.forEach(function(p){ fh+='<img src="'+p+'" alt="" loading="lazy"/>'; }); }
+document.getElementById('film').innerHTML=fh;
+
+// Reveal on scroll
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.05});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});},2500);
+
+// 3D tilt on stacking cards (desktop hover only)
+if(matchMedia('(hover:hover)').matches){document.querySelectorAll('.tilt').forEach(function(card){
+card.addEventListener('mousemove',function(e){var r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform='perspective(900px) rotateY('+(x*6)+'deg) rotateX('+(-y*6)+'deg)';});
+card.addEventListener('mouseleave',function(){card.style.transform='';});});}
+
+// Gallery lightbox
+var lb=document.getElementById('lightbox'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('#gallery button').forEach(function(b){b.addEventListener('click',function(){lbImg.src=b.dataset.full;lb.classList.add('open');});});
+document.getElementById('lbClose').addEventListener('click',function(){lb.classList.remove('open');});
+lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('open');});
+addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});
+
+// Quote wizard (4 steps; builds a call message — nothing is sent from this page)
+var step=1,steps=document.querySelectorAll('#wizard .step'),pbar=document.getElementById('pbar'),
+    backBtn=document.getElementById('backBtn'),nextBtn=document.getElementById('nextBtn'),buildBtn=document.getElementById('buildBtn');
+function renderStep(){
+  steps.forEach(function(s){s.classList.toggle('active',+s.dataset.step===step);});
+  pbar.style.width=(step/4*100)+'%';
+  backBtn.style.display=step>1?'':'none';
+  nextBtn.style.display=step<3?'':'none';
+  buildBtn.style.display=step===3?'':'none';
+}
+nextBtn.addEventListener('click',function(){if(step<3){step++;renderStep();}});
+backBtn.addEventListener('click',function(){if(step>1){step--;renderStep();}});
+buildBtn.addEventListener('click',function(){
+  var svc=document.querySelector('input[name="service"]:checked').value;
+  var details=document.getElementById('qdetails').value.trim();
+  var area=document.getElementById('qarea').value.trim();
+  var name=document.getElementById('qname').value.trim();
+  var phone=document.getElementById('qphone').value.trim();
+  var msg='Hi Rick, my name is '+(name||'___')+'.\nI need a free quote for: '+svc+'.'
+    +(details?'\nAbout the tree/stump: '+details:'')
+    +(area?'\nWhere it is: '+area:'')
+    +'\nYou can reach me at '+(phone||'___')+'.';
+  document.getElementById('summaryText').textContent=msg;
+  document.getElementById('copyNote').style.display='none';
+  step=4; renderStep();
+});
+renderStep();
+document.getElementById('copyBtn').addEventListener('click',function(){
+  var txt=document.getElementById('summaryText').textContent;
+  function done(){ document.getElementById('copyNote').style.display='block'; }
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(done).catch(function(){ fallback(); }); }
+  else fallback();
+  function fallback(){
+    var ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta);
+    ta.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(ta); done();
+  }
+});
+document.getElementById('wizard').addEventListener('submit',function(e){ e.preventDefault(); });
+</script>
+</body>
+</html>
